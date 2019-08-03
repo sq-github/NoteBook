@@ -1,0 +1,8 @@
+version: 1.0.0
+files:
+  - url: NoteBook-Setup-1.0.0.exe
+    sha512: 1REZv3JQtz+ppY74iIZ/qaYcW3Wb+XdpoftyVJqsdK+/RBn1U+2DzAJjCS8UAmGRebU1uqDzH35Q0B6+l+tSUw==
+    size: 46291988
+path: NoteBook-Setup-1.0.0.exe
+sha512: 1REZv3JQtz+ppY74iIZ/qaYcW3Wb+XdpoftyVJqsdK+/RBn1U+2DzAJjCS8UAmGRebU1uqDzH35Q0B6+l+tSUw==
+releaseDate: '2019-08-03T12:30:47.217Z'

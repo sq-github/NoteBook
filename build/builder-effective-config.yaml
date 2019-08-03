@@ -1,0 +1,29 @@
+directories:
+  output: build
+  buildResources: build
+productName: NoteBook
+appId: notebookapp
+copyright: sq
+compression: store
+asar: false
+extraResources:
+  - from: ./app-update.yml
+    to: ./b.txt
+win:
+  icon: ./fonts/imgs/cir-nb.ico
+  extraResources:
+    from: ./app-update.yml
+    to: ./b.txt
+nsis:
+  oneClick: false
+  guid: sq
+  perMachine: true
+  allowElevation: true
+  allowToChangeInstallationDirectory: true
+  installerIcon: ./fonts/imgs/cir-nb.ico
+  uninstallerIcon: ./fonts/imgs/cir-nb.ico
+  installerHeaderIcon: ./fonts/imgs/cir-nb.ico
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: NoteBook
+electronVersion: 5.0.8

@@ -1,0 +1,98 @@
+.flex_l{
+    display: flex;
+}
+.h45{
+    height: 45;
+}
+.float_l{
+    float: left;
+}
+.radius_20{
+    border-radius: 20px;
+}
+.pad_t10{
+    padding-top: 10px;
+}
+.pad_bot10{
+    padding-bottom: 10px;
+}
+.pad_l10{
+    padding-left: 10px;
+}
+.pad_r10{
+    padding-right: 10px;
+}
+.mar_l15{
+    margin-left: 15px;
+}
+.cor_oranged{
+    background-color: orangered;
+}
+.cor_black{
+    background-color: black;
+}
+.cor_gray{
+    background-color: gray;
+}
+.no_drog{
+    -webkit-app-region: no-drag;
+}
+.cir_25{
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    border:1px solid rgb(65, 61, 61);
+}
+:focus {
+    outline: -webkit-focus-ring-color auto 5px;
+    outline-color: gray;
+    outline-style: auto;
+    outline-width: 0;
+}
+
+@font-face{
+    font-family: 'chinese_font';
+    src : url('../../fonts/ShiGuangManManZou-2.ttf');
+}
+
+.null_color{
+    background-color:rgba(0, 0, 0, 0);
+}
+.cor_white{
+    color: white;
+}
+.oldColor{
+    background-image: url(../../fonts/imgs/sqgreen.jpg)
+}
+.gra_green{
+    background-color: #FA8BFF;
+    background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+}
+.gra_orange{
+    background-color: #FBDA61;
+    background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 50%, #ffffff 100%);
+}
+.gra_black{
+    /* background-image: url(../../fonts/imgs/test2.png) */
+    /* background-color: #f6d365; */
+    background-image: linear-gradient(45deg, #434343 0%, rgb(90, 28, 76) 50%,black 100%);
+}
+.gra_blue{
+    background-image: linear-gradient(-45deg, #f3e7e9 0%, #7ec3eb 20%, #e3eeff 100%);
+}
+.gra_aqua{
+    background-image: linear-gradient(-45deg, #FFFEFF 0%, rgb(209, 235, 247) 30%,#D7FFFE 100%);
+}
+.gra_yellow{
+    background-color: #85FFBD;
+    background-image: linear-gradient(-45deg, #85FFBD 0%, #FFFB7D 100%);
+}
+.n_play{
+    display: none;
+}
+/* 提示框 */
+.alert-light {
+    color: #f04f49;
+    background-color: transparent;
+    border:none;
+}

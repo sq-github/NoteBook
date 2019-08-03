@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>add</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./add.css">
+    <link rel="stylesheet" href="../css/com.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+
+</head>
+
+<body class="null_color">
+    <script>
+        // 重命名 Electron 提供的 require
+        window.nodeRequire = require;
+        delete window.require;
+        delete window.exports;
+        delete window.module;
+    </script>
+    <script type="text/javascript" src="../jquery.js"></script>
+    <div class="addPage radius_20 oldColor" id="addPage">
+        <div class="container header pad_t10 pad_bot10">
+            <div class="row">
+                <div class="col">
+                    <div id="cir_one" class="cir_25 gra_blue float_l mar_l15 no_drog">
+                    </div>
+                    <div id="cir_two" class="cir_25 gra_aqua float_l mar_l15 no_drog">
+                    </div>
+                    <div id="cir_three" class="cir_25 gra_yellow float_l mar_l15 no_drog">
+                    </div>
+                </div>
+                <div class="col">
+                    <i id="close" class="iconfont icon-guanbi no_drog"></i>
+                </div>
+            </div>
+        </div>
+        <textarea id="title" class="pad_l10 pad_r10" name="" rows="2" placeholder="标题"></textarea>
+        <div style="float: left;width: 1px;">&nbsp;</div>
+        <div style="display: flex">
+            <textarea id="content" class="pad_l10 pad_r10 " name="" rows="" placeholder="内容"></textarea>
+        </div>
+        <div class="footer">
+            <i id="confirm" class="iconfont icon-queren"></i>
+        </div>
+    </div>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        nodeRequire('./add.js')
+        const { save_color } = nodeRequire('./add.js')
+    </script>
+</body>
+
+</html>

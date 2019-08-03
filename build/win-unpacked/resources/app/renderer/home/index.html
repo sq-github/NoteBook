@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>home</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="../css/com.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+</head>
+
+<body class="null_color">
+    <script>
+        // 重命名 Electron 提供的 require
+        window.nodeRequire = require;
+        delete window.require;
+        delete window.exports;
+        delete window.module;
+    </script>
+    <script type="text/javascript" src="../jquery.js"></script>
+    <div class="page radius_20 oldColor" id="mainpage">
+        <div class="container header pad_t10 pad_bot10">
+            <div class="row">
+                <div class="col">
+                    <div id="cir_one" class="cir_25 gra_green float_l mar_l15 no_drog">
+                    </div>
+                    <div id="cir_two" class="cir_25 gra_orange cor_black float_l mar_l15 no_drog">
+                    </div>
+                    <div id="cir_three" class="cir_25 gra_black float_l mar_l15 no_drog">
+                    </div>
+                </div>
+                <div class="col">
+                    <i id="close" class="iconfont icon-guanbi no_drog"></i>
+                </div>
+            </div>
+        </div>
+        <div class="alert alert-light alert-dismissible fade n_play" id="success_save" role="alert"
+            style="text-align: right;width: 300px;">
+            <strong>更新成功!</strong>
+        </div>
+        <div class="alert alert-light alert-dismissible fade n_play" id="success_del" role="alert"
+            style="text-align: right;width: 300px;">
+            <strong>删除成功!</strong>
+        </div>
+        <div class="flex_l">
+            <div class="nav flex-column nav-pills menu_lists" id="" role="tablist" aria-orientation="vertical">
+            </div>
+            <div class="flex_l" style="width: 1px;">&nbsp;</div>
+            <div class="tab-content" id="">
+                <div id="mainTitle" class="pad_l10 pad_r10 pad_t10 h45 cor_white">NoteBook</div>
+                <textarea class="pad_l10 pad_r10 pad_t10 cor_white" name="" id="mainText" cols="30"
+                    rows="10">                 哟！  Hello~
+                 </textarea>
+            </div>
+        </div>
+        <div class="save">
+            <i id="save" class="iconfont icon-queren"></i>
+        </div>
+        <div class="container footer">
+            <div class="row">
+                <div class="col">
+                    <i id="lists" class="iconfont icon-liebiao"></i>
+                </div>
+                <div class="col">
+                    <i id="add" class="iconfont icon-jia1"></i>
+                </div>
+                <div class="col">
+                    <i id="del" class="iconfont icon-shanchu"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- <script src="./index.js"></script> -->
+    <script>
+        nodeRequire('./index.js')
+        const { select, get_list, scroll_start, scroll_stop, save_color } = nodeRequire('./index.js')
+    </script>
+</body>
+
+</html>
